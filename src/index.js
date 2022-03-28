@@ -11,8 +11,10 @@ app.use(bodyParser.json());
 //TODO: Implement books and pets APIs here
 
 const booksRouter = require('./routers/books')
+const petsRouter = require('./routers/pets')
 
 app.use("/books", booksRouter)
+app.use('/pets', petsRouter)
 
 const port = 3030;
  
